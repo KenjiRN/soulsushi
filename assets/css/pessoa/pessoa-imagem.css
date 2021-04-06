@@ -1,0 +1,22 @@
+.pessoa__imagem {
+    background: red;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+.pessoa__imagem--roberta {
+    background-image: url('../../img/pessoas/roberta.jpg');
+
+}
+
+.pessoa__imagem--marcela {
+    background-image: url('https://cdn.pixabay.com/photo/2015/11/07/11/17/woman-1031000__340.jpg');
+
+}
+
+.pessoa__imagem--andreia {
+    background-image: url('https://cdn.pixabay.com/photo/2018/11/21/04/11/grandfather-3828828_960_720.jpg');
+}

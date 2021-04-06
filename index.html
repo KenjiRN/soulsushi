@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Soul Sushi</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./assets/css/normalize.css" rel="stylesheet">
+        <link href="./assets/css/reset.css" rel="stylesheet">
+        <link href="./assets/css/cabecalho.css" rel="stylesheet">
+        <link href="./assets/css/menu/menu-lista.css" rel="stylesheet">
+        <link href="./assets/css/menu/menu-item.css" rel="stylesheet">
+        <link href="./assets/css/menu/menu-link.css" rel="stylesheet">
+        <link href="./assets/css/banner/banner.css" rel="stylesheet">
+        <link href="./assets/css/banner/banner-titulo.css" rel="stylesheet">
+        <link href="./assets/css/banner/banner-imagem.css" rel="stylesheet">
+        <link href="./assets/css/sobre/sobre.css" rel="stylesheet">
+        <link href="./assets/css/sobre/sobre-descricao.css" rel="stylesheet">
+        <link href="./assets/css/sobre/sobre-titulo.css" rel="stylesheet">
+        <link href="./assets/css/receitas.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-botao.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-conteudo.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/receita/receita-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos-descricao.css" rel="stylesheet" />
+        <link href="./assets/css/quemSomos/quemSomos-titulo.css" rel="stylesheet" />
+        <link href="./assets/css/pessoas.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-funcao.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-imagem.css" rel="stylesheet" />
+        <link href="./assets/css/pessoa/pessoa-nome.css" rel="stylesheet" />
+        <link href="./assets/css/rodape.css" rel="stylesheet" />
+        <link href="./assets/css/logo.css" rel="stylesheet" />
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .instagram-link{
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                right: 40px;
+                background-color: #3f729b;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 1px 1px 2px #888;
+                z-index: 1000;
+            }
+            .facebook-link{
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 170px;
+                right: 40px;
+                background-color: #3b5998;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 1px 1px 2px #888;
+                z-index: 1000;
+            }
+            .whatsapp-link{
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 104px;
+                right: 40px;
+                background-color: #25d366;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                box-shadow: 1px 1px 2px #888;
+                z-index: 1000;
+            }
+            .fa-whatsapp{
+                margin-top: 16px;
+                
+            }
+            .fa-instagram{
+                margin-top: 16px;
+                
+            }
+            .fa-facebook{
+                margin-top: 16px;
+                
+            }
+            .whatsapp-link:hover{
+                background: #03702b;
+	            transform: scale(1.2);
+            }
+            .instagram-link:hover{
+                background: #0a2133;
+	            transform: scale(1.2);
+            }
+            .facebook-link:hover{
+                background: #1482d6;
+	            transform: scale(1.2);
+            }
+            .rede{
+                width: 20px;
+                height: 20px;
+                float: left;
+                margin-left: 20px;
+                transition: all 0.4s ease-out;
+            }
+
+            .logo{
+                width: 80px;
+                height: 80px;
+            }
+            .xixi{
+                font-family: 'Fredoka One', cursive;
+                color: #fff;
+            }
+            .rede:hover{
+                cursor: pointer;
+                transform: translateY(-10px);
+            }
+
+   
+            footer{
+                background-color: #264653;
+                color: #fff;
+            }
+            .rodape{
+                font-family: 'Fredoka One', cursive;
+                color: #FFF;
+            }
+            .copyright{
+                text-align: center;
+            }
+            .menu ul{
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                position: relative;
+                text-decoration: none;
+                
+            }
+            .menu ul li{
+                width: 150px;
+                float: left;
+                flex-grow: 1;
+                cursor: pointer;
+                transition: all .4s;
+                
+            }
+            .menu a{
+                padding: 0px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                font-size: 24px;
+            }
+            .menu{
+                width: 350px;
+                height: 50px;
+                font-family: 'Fredoka One', cursive;
+                
+            }
+
+      
+            .menu ul li:hover ul{
+                visibility: visible;
+            }  
+            
+         
+            .menu a:hover{
+                background-color: #e89221;
+                flex-grow: 1;
+                cursor: pointer;
+                transition: all .4s;
+            }
+
+       
+        @media(max-width: 800px){
+
+            .menu{
+                margin-top: 5px;
+                margin-left: -100%;
+                transition: all .4s;
+            }
+            
+            .menu ul li{
+                width: 100%;
+                float:none;
+              }  
+          
+          
+        }
+   
+        </style>
+    </head>
+    <body>
+        
+
+        <header class="cabecalho">
+            
+            <div>
+                <img class="logo rede" alt="Fruta e Fruto" src="./assets/img/sushi.png">
+                <h2 class="xixi">Soul Sushi,</h2>
+                <h3 class="xixi">The P0rn Food</h3>
+            </div>
+  
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#nos">About Us</a></li>
+                    <li><a href="#meni">Menu</a> </li>
+                    <li><a href="#hora">Contact</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+
+
+        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5592994851870" target="_blank"><i class="fa fa-whatsapp"></i></a>
+
+        <a class="instagram-link" href="https://www.instagram.com/soulsushi1/" target="_blank"><i class="fa fa-instagram"></i></a>
+
+        <a class="facebook-link" href="https://www.facebook.com/Soulsushi1-104873385020348/" target="_blank"><i class="fa fa-facebook"></i></a>
+
+        
+        <section class="banner">
+            <div class="banner__imagem"></div>
+            <h2 class="banner__titulo">Soul Sushi <br>para quem ama sushi.</h2>
+        </section>
+
+        
+
+        
+
+
+
+
+        <section class="sobre">
+            <h2 class="sobre__titulo" id="nos">Soul Sushi</h2>
+            <p class="sobre__descricao">Soul Sushi é um restaurante especializado na culinária Japonesa com profissionais com altissímo nível no corte. 
+                O destaque da casa são pratos tradicionais além de pratos personalizados como nossos famosos Raméns.<br>
+               <br> <strong>Prezamos a qualidade somada à quantidade.</strong><br>
+                <br>
+                Soul é um complemento, uma palavra inglesa de um significado forte - alma, significando que <strong>nossa determinação é inquebrantável</strong>,
+                entregamos o nosso melhor.<br>
+                
+            
+                
+                
+        </section>
+
+
+
+
+
+
+        <section class="receitas" id="meni">
+            
+            <div id="cardapio" class="receita">
+                <img alt="Tigela de abacate" class="receita__imagem" src="./assets/img/receitas/tigela-de-abacate.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo" >Niguiri</h4>
+                    <p class="receita__descricao">Do corte perfeito para sua mesa.</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="receita">
+                <img alt="Salada de kiwi" class="receita__imagem" src="./assets/img/receitas/salada-de-kiwi.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Super combo</h4>
+                    <p class="receita__descricao">Um mix de todas as nossas divindades.</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="receita">
+                <img alt="Mix de vegetais" class="receita__imagem" src="./assets/img/receitas/mix-de-vegetais.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">0ne and a half man </h4>
+                    <p class="receita__descricao">Você está com pouca fome? Este é o prato ideal.</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="receita">
+                <img alt="Pimentões à Juliana" class="receita__imagem" src="./assets/img/receitas/pimentoes-a-juliana.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Sushi à Melissa</h4>
+                    <p class="receita__descricao">Nossos famosos sushis veganos. Abacate&Tofu</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="receita">
+                <img alt="Prato oriental" class="receita__imagem" src="./assets/img/receitas/prato-oriental.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Temaki</h4>
+                    <p class="receita__descricao">Sushi em formato de cone? TEMOS. O que seriamos nós sem esse icônico cone? Nhami.</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="receita">
+                <img alt="Beterrabas assadas" class="receita__imagem" src="./assets/img/receitas/comi.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">TOOFÚ</h4>
+                    <p class="receita__descricao">Famosa receita de Tofú com as mais altos requintes de qualidade, frito ao molho de Cerveja Malte do Trovão.</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+
+            <div class="receita">
+                <img alt="Beterrabas assadas" class="receita__imagem" src="./assets/img/receitas/frito.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Team #fritus</h4>
+                    <p class="receita__descricao">Camarão bem fritinho em óleo especial da Cervejaria Malte do Trovão. Premiado pelo mestre Chen.</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+
+            <div class="receita">
+                <img alt="Beterrabas assadas" class="receita__imagem" src="./assets/img/receitas/naruto.jpg" />
+                <div class="receita__conteudo">
+                    <h4 class="receita__titulo">Ramen do Naruto</h4>
+                    <p class="receita__descricao">Famosa receita original, extra picante com pedaços extras de lombo de porco .</p>
+                    <button class="receita__botao">Adicione Pedido</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="quem-somos">
+            <h3 class="quem-somos__titulo">Depoimentos </h3>
+            <p class="quem-somos__descricao">Declarações de alguns clientes que se apaixonaram por nossas receitas excêntricas e únicas</p>
+            <div class="pessoas">
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--roberta"></div>
+                    <span class="pessoa__nome">Roberta</span>
+                    <span class="pessoa__funcao">"esplêndido"</span>
+                </div>
+
+
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--marcela"></div>
+                    <span class="pessoa__nome">Marcela</span>
+                    <span class="pessoa__funcao">"A receita secreta do molho de<br> cerveja Malte do Trovão é o segredo"</span>
+                </div>
+
+
+                <div class="pessoa">
+                    <div class="pessoa__imagem pessoa__imagem--andreia"></div>
+                    <span class="pessoa__nome">Gandalf</span>
+                    <span class="pessoa__funcao">"O Tofú nao tem igual"</span>
+               
+                </div>
+            </div>
+        </section>
+ 
+
+        <div class="rodape">
+
+            🍱🥰  <br><br>
+            <h2><strong>Horário de Funcionamento</strong><br></h2>
+            <p id="hora"> Segunda à Sexta: 18:00 às 00:00<br>
+
+            Sábado, Domingo e Feriado: 18:00 às 00:00</p>
+<br>
+            <p><strong> informações e pedidos através dos menus flutuantes ao lado >>></strong></p>
+            
+            
+            </div>
+        <footer>
+            <p class="copyright">&copy; Copyright: Powered by KRN<button class="button2"><a href="https://github.com/KenjiRN" >GitHub</a> </li></button> - 2021. 
+
+        </footer>
+    <script src="app.js"></script>
+    </body>
+</html>
+ 
+
